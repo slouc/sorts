@@ -1,2 +1,2 @@
-# sorts
-Functional implementation of various sorting algorithms in Scala
+# Functional sorts
+Implementation of various sorting algorithms in Scala in purely functional fashion
