@@ -7,9 +7,10 @@ package com.slouc.sorting
 object Main extends App {
 
   val bubbleSort: Sort = new BubbleSort
+  val selectionSort: Sort = new SelectionSort
   
   val init = Common.gen
-  val solution = bubbleSort.sort(init)
+  val solution = selectionSort.sort(init)
   
   println(init)
   println(solution)
