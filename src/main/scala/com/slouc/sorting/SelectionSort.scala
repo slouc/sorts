@@ -22,7 +22,8 @@ class SelectionSort extends Sort {
       if (list.size == 1) list
       else {
         val onePass = scan(list)
-        onePass.head :: iterate(onePass.tail)
+        if (onePass.sorted == onePass) onePass
+        else onePass.head :: iterate(onePass.tail)
       }
     }
 
