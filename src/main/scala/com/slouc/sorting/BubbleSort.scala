@@ -27,11 +27,10 @@ class BubbleSort extends Sort {
       if (list.size == 1) list
       else {
         val onePass = solve(list).reverse
-        if (onePass.sorted == onePass) onePass
+        if (isSorted(onePass)) onePass // FIXME -> isSorted
         else onePass.head :: iterate(onePass.tail)
       }
     }
-
     iterate(list).reverse
   }
 }
