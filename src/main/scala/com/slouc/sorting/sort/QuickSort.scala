@@ -1,6 +1,5 @@
 package com.slouc.sorting.sort
 
-import scala.collection.mutable.ListBuffer
 import com.slouc.sorting.Sort
 
 /**
@@ -11,9 +10,10 @@ import com.slouc.sorting.Sort
  */
 class QuickSort extends Sort {
 
-  def sort(list: List[Int]): List[Int] = {
-    if (list == Nil || list.size == 1) list
-    else {
+  def sort(list: List[Int]): List[Int] = list match {
+    case Nil => list
+    case _ :: Nil => list
+    case _ => {
       val pivot = list.head
       val (smaller, larger) = list.tail.partition(_ < pivot)
       sort(smaller) ++ List(pivot) ++ sort(larger)
