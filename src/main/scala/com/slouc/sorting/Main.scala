@@ -8,7 +8,7 @@ import com.slouc.sorting.sort._
  */
 object Main extends App {
 
-  val sort: Sort = new QuickSort
+  val sort: Sort = new MergeSort
   
   val init = Common.gen
   val solution = sort.sort(init)
