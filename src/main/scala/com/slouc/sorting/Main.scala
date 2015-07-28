@@ -1,6 +1,9 @@
 package com.slouc.sorting
 
-import com.slouc.sorting.sort._
+import scala.math.BigInt.probablePrime
+import scala.util.Random
+import com.slouc.sorting.sort.MergeSort
+import com.slouc.sorting.sort.InsertionSort
 
 /**
  * @author slouc
@@ -8,12 +11,11 @@ import com.slouc.sorting.sort._
  */
 object Main extends App {
 
-  val sort: Sort = new MergeSort
+  val sort: Sort = new InsertionSort
   
   val init = Common.gen
   val solution = sort.sort(init)
   
   println(init)
   println(solution)
-  
 }
