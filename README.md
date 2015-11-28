@@ -1,2 +1,2 @@
 # Functional sorts
-Implementation of various sorting algorithms in Scala in purely functional fashion
+Implementation of various sorting algorithms in Scala. Only functional paradigm is used (no mutables etc)
